@@ -1,0 +1,325 @@
+/* Estilos globais do corpo da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Define a família de fontes */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+    display: flex; /* Habilita o layout flexbox */
+    flex-direction: column; /* Organiza os itens em coluna */
+    min-height: 100vh; /* Garante que a altura mínima seja 100% da altura da viewport */
+    background: linear-gradient(135deg, #1a1a1a, #2c3e50); /* Adiciona um fundo gradiente */
+    color: #f4f4f9; /* Define a cor do texto principal */
+}
+
+/* Estilos do cabeçalho */
+header {
+    background: linear-gradient(90deg, #2c3e50, #4b6cb7); /* Fundo gradiente para o cabeçalho */
+    padding: 1rem 2rem; /* Preenchimento interno */
+    border-bottom: 2px solid #4b6cb7; /* Borda inferior */
+}
+
+/* Esconde o checkbox do menu mobile */
+#menu-toggle {
+    display: none;
+}
+
+/* Estilos do ícone do menu (hambúrguer) */
+.menu-icon {
+    display: none; /* Oculto por padrão */
+    font-size: 2rem; /* Tamanho do ícone */
+    color: #fff; /* Cor do ícone */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+}
+
+/* Estilos da lista de navegação */
+nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Layout flexbox */
+    justify-content: flex-end; /* Alinha os itens à direita */
+    padding: 0; /* Remove o preenchimento */
+    margin: 0; /* Remove a margem */
+    gap: 10px; /* Espaçamento entre os links */
+}
+
+/* Estilos dos links de navegação */
+nav a {
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Texto em negrito */
+    font-size: 1.1rem; /* Tamanho da fonte */
+    padding: 0.5rem 1rem; /* Preenchimento */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave para o hover */
+}
+
+/* Efeito hover para os links de navegação */
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos do conteúdo principal */
+main {
+    flex: 1; /* Permite que o main ocupe o espaço restante */
+    display: flex; /* Layout flexbox */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    padding: 2rem 4rem; /* Preenchimento */
+    gap: 4rem; /* Espaçamento entre as seções */
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+    max-width: 1400px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza o conteúdo */
+    width: 100%; /* Largura total */
+    box-sizing: border-box; /* Garante que padding e border não afetem a largura total */
+}
+
+/* Estilos da seção de biografia */
+.bio-section {
+    flex: 1; /* Ocupa o espaço disponível */
+    min-width: 300px; /* Largura mínima */
+    max-width: 600px; /* Largura máxima */
+}
+
+/* Estilos do título da seção de biografia */
+.bio-section h1 {
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilos da caixa de texto da biografia */
+.bio-text {
+    border: 2px solid #4b6cb7; /* Borda */
+    padding: 1rem; /* Preenchimento */
+    border-radius: 8px; /* Bordas arredondadas */
+    background: linear-gradient(135deg, #2c3e50, #4b6cb7); /* Fundo gradiente */
+}
+
+/* Estilos dos parágrafos na caixa de texto */
+.bio-text p {
+    text-align: justify; /* Texto justificado */
+    line-height: 1.7; /* Altura da linha */
+    font-size: 1.3rem; /* Tamanho da fonte */
+    letter-spacing: 0.5px; /* Espaçamento entre letras */
+    margin-top: 0; /* Remove a margem superior */
+    margin-bottom: 0.5rem; /* Margem inferior */
+}
+
+/* Remove a margem inferior do último parágrafo */
+.bio-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* Estilos dos links na caixa de texto */
+.bio-text a {
+    color: #a6c1ee; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s; /* Transição de cor suave */
+}
+
+/* Efeito hover para os links na caixa de texto */
+.bio-text a:hover {
+    color: #fff; /* Cor do link ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+/* Estilos dos ícones na caixa de texto */
+.bio-text i {
+    margin-right: 10px; /* Margem à direita */
+    color: #a6c1ee; /* Cor do ícone */
+}
+
+/* Estilos da seção da foto */
+.photo-section {
+    flex: 1; /* Ocupa o espaço disponível */
+    display: flex; /* Layout flexbox */
+    justify-content: center; /* Centraliza a foto */
+    min-width: 300px; /* Largura mínima */
+}
+
+/* Estilos do wrapper da imagem (para a borda gradiente) */
+.img-wrapper {
+    padding: 4px; /* Espaçamento para criar a borda */
+    background: linear-gradient(135deg, #4b6cb7, #2c3e50); /* Fundo gradiente */
+    border-radius: 14px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra */
+    display: inline-block; /* Comportamento de bloco em linha */
+}
+
+/* Estilos da imagem de perfil */
+.photo-section img {
+    max-width: 100%; /* Largura máxima responsiva */
+    height: auto; /* Altura automática */
+    border-radius: 10px; /* Bordas arredondadas */
+    max-height: 300px; /* Altura máxima */
+    display: block; /* Garante que a imagem não tenha espaços extras */
+}
+
+/* Estilos do rodapé */
+footer {
+    background: linear-gradient(90deg, #2c3e50, #4b6cb7); /* Fundo gradiente */
+    color: #fff; /* Cor do texto */
+    text-align: center; /* Texto centralizado */
+    padding: 1rem; /* Preenchimento */
+    margin-top: auto; /* Empurra o rodapé para o final da página */
+    border-top: 2px solid #4b6cb7; /* Borda superior */
+}
+
+/* Media Queries para responsividade (telas de até 768px) */
+@media (max-width: 768px) {
+    /* Ajustes no cabeçalho */
+    header {
+        padding: 1rem;
+    }
+    /* Ajustes na navegação para o menu mobile */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    /* Exibe o ícone do menu hambúrguer */
+    .menu-icon {
+        display: block;
+    }
+    /* Esconde a lista de navegação por padrão */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+    }
+    /* Exibe o menu quando o checkbox está marcado */
+    #menu-toggle:checked ~ ul {
+        display: flex;
+    }
+    /* Links de navegação em bloco */
+    nav a {
+        display: block;
+    }
+    /* Ajustes no conteúdo principal */
+    main {
+        padding: 2rem 1rem;
+        gap: 2rem;
+        flex-direction: column-reverse; /* Inverte a ordem das seções */
+    }
+    /* Seções de biografia e foto ocupam a largura total */
+    .bio-section, .photo-section {
+        min-width: auto;
+        width: 100%;
+        max-width: 100%;
+    }
+    /* Centraliza a foto */
+    .photo-section {
+        justify-content: center;
+    }
+    /* Centraliza o título da biografia */
+    .bio-section h1 {
+        text-align: center;
+    }
+    /* Ajustes nos parágrafos da biografia */
+    .bio-text p {
+        text-align: left;
+        font-size: 1.1rem;
+        word-break: break-word; /* Quebra de palavra para evitar overflow */
+    }
+}
+
+/* --- Estilos do Carrossel --- */
+
+/* Contêiner principal do carrossel */
+.carousel-container {
+    position: relative; /* Necessário para posicionar os botões de navegação */
+    max-width: 100%;
+    margin: auto; /* Centraliza o carrossel */
+}
+
+/* Estilos de cada slide */
+.carousel-slide {
+    display: none; /* Oculto por padrão */
+    text-align: center; /* Centraliza o conteúdo do slide */
+    padding: 20px 40px; /* Preenchimento */
+}
+
+/* Estilos das imagens no slide */
+.carousel-slide img {
+    height: 120px; /* Altura fixa para harmonia visual */
+    width: auto;
+    max-width: 100%;
+    object-fit: contain; /* Garante que a imagem se ajuste sem distorcer */
+    margin-bottom: 1rem; /* Margem inferior */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente transparente */
+    padding: 10px; /* Preenchimento ao redor da imagem */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+/* Estilos dos títulos (h3) no slide */
+.carousel-slide h3 {
+    color: #fff;
+    margin-top: 0;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5); /* Sombra no texto para legibilidade */
+}
+
+/* Estilos dos parágrafos no slide */
+.carousel-slide p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #e0e0e0; /* Cor de texto mais suave */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5); /* Sombra no texto */
+    text-align: center; /* Texto centralizado */
+}
+
+/* Estilos das listas não ordenadas no slide */
+.carousel-slide ul {
+    list-style: none; /* Remove os marcadores padrão */
+    padding: 0;
+    text-align: left; /* Alinha o texto da lista à esquerda */
+    margin-top: 1rem; /* Margem superior */
+}
+
+/* Estilos dos itens da lista no slide */
+.carousel-slide li {
+    margin-bottom: 0.5rem; /* Margem inferior entre os itens */
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #e0e0e0;
+    position: relative; /* Necessário para o pseudo-elemento ::before */
+    padding-left: 1.5rem; /* Espaço para o marcador personalizado */
+}
+
+/* Marcador personalizado para os itens da lista */
+.carousel-slide li::before {
+    content: '▶'; /* Define o conteúdo do marcador */
+    position: absolute;
+    left: 0;
+    color: #a6c1ee; /* Cor do marcador */
+    font-size: 0.8rem;
+    top: 5px; /* Ajuste vertical */
+}
+
+/* Estilos dos botões de navegação do carrossel (anterior/próximo) */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%; /* Alinhamento vertical */
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none; /* Impede a seleção do texto do botão */
+}
+
+/* Posicionamento do botão "próximo" */
+.next { right: -10px; border-radius: 3px 0 0 3px; }
+/* Posicionamento do botão "anterior" */
+.prev { left: -10px; border-radius: 0 3px 3px 0; }
+
+/* Efeito hover para os botões de navegação */
+.prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
+
+/* Animação de fade para a transição dos slides */
+.fade { animation-name: fade; animation-duration: 1.5s; }
+
+/* Keyframes da animação de fade */
+@keyframes fade { from {opacity: .4} to {opacity: 1} }

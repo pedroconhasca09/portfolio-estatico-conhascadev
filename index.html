@@ -1,0 +1,60 @@
+<!-- Define o tipo de documento como HTML5 -->
+<!DOCTYPE html>
+<!-- Define o idioma da página como português do Brasil -->
+<html lang="pt-BR">
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configura a viewport para garantir a responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define o título da página -->
+    <title>Pedro Conhasca - Página Inicial</title>
+    <!-- Vincula a folha de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Cabeçalho da página -->
+    <header>
+        <!-- Menu de navegação -->
+        <nav>
+            <!-- Checkbox para controle do menu mobile -->
+            <input type="checkbox" id="menu-toggle">
+            <!-- Ícone do menu hambúrguer -->
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <!-- Lista de links de navegação -->
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre.html">Currículo</a></li>
+                <li><a href="contato.html"><span>Contato</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <!-- Seção de biografia -->
+        <section class="bio-section">
+            <h1>Sobre Mim</h1>
+            <!-- Caixa de texto da biografia -->
+            <div class="bio-text">
+                <p>Prazer, sou o Pedro Conhasca. Desenvolvedor Fullstack em formação pela Universidade La Salle e estagiário na Fundação Municipal de Educação de Niterói.</p>
+                <p>Sou movido por transformar problemas em soluções reais através do código. No dia a dia, trabalho no ecossistema Python/Django e PHP/Laravel, além de construir interfaces responsivas com JavaScript, HTML e CSS.</p>
+            </div>
+        </section>
+
+        <!-- Seção da foto de perfil -->
+        <section class="photo-section">
+            <!-- Wrapper para a imagem, com borda gradiente -->
+            <div class="img-wrapper">
+                <img src="img/perfil.jpeg" alt="Foto de Pedro Conhasca">
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>2026 - Direitos Autorais Reservados - Pedro Conhasca</p>
+    </footer>
+</body>
+</html>
