@@ -1,6 +1,6 @@
 📝 Portfólio Estático - Pedro Conhasca
 
-Este é o repositório do meu portfólio pessoal, uma página web estática desenvolvida para apresentar minha trajetória profissional, habilidades técnicas e projetos como desenvolvedor. O projeto foi recentemente reestruturado com foco em **Acessibilidade**, **UX/UI Moderno (Neon/Cyberpunk)** e **Clean Code**.
+Este é o repositório do meu portfólio pessoal, uma página web desenvolvida para apresentar minha trajetória profissional, habilidades técnicas e projetos como desenvolvedor. O projeto foi recentemente reestruturado com foco em **Acessibilidade**, **UX/UI Moderno (Neon/Cyberpunk)** e **Clean Code**.
 
 <img width="1913" height="893" alt="image" src="https://github.com/user-attachments/assets/a7132898-a3bb-4603-b608-07295f0ab5ea" />
 
